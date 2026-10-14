@@ -1,0 +1,28 @@
+{
+  "_comment": "Template profile. Copy to profiles/<your-device>.json and edit. Every key is optional; omitted keys fall back to the tool's built-in detection.",
+
+  "curated_apps": [
+    "com.termux",
+    "com.wireguard.android"
+  ],
+  "reference_apps": [
+    "com.example.some.authenticator"
+  ],
+  "banking_apps": [
+    "com.example.mybank"
+  ],
+  "always_apks": [
+    "com.example.patched.app"
+  ],
+  "extra_partitions": [],
+  "must_have": [
+    ["Call recordings", "data/media/0/Recordings/.+"],
+    ["Root image I keep on sdcard", "data/media/0/magisk_patched.*\\.img$"]
+  ],
+  "manual_items": [
+    ["Some app with its own export", "Settings › Backup › Export, then copy the file to the computer."]
+  ],
+  "restore_notes": [
+    "Anything you want printed at the end of RESTORE.md."
+  ]
+}
